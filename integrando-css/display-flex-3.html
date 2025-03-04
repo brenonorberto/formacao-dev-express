@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox</title>
+        <style>
+            .flexbox {
+                display: flex;
+                /* Definimos o eixo principal */
+                flex-direction: column;
+                /* Main Axis */
+                justify-content: center;
+                /* Cross Axis */
+                align-items: flex-end;
+            }
+
+            .externo {
+                height: 400px;
+                background-color: crimson;
+                border: 5px solid #000;
+            }
+
+            .interno {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: deepskyblue;
+                border: 5px solid #000;
+            }
+
+            .centralizar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cor-1 {
+                background-color: fuchsia;
+            }
+
+            .cor-2 {
+                background-color: #ff7f50;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox #3</h1>
+        
+        <span>Flex Container</span>
+        <div class="externo flexbox">
+            <div class="centralizar interno">1</div>
+            <div class="centralizar interno cor-1">2</div>
+            <div class="centralizar interno cor-2">3</div>
+        </div>
+
+        <a href="./exercicios.html">Voltar</a>
+    </body>
+</html>

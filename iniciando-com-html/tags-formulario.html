@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tags Formulário</title>
+    </head>
+    <body>
+        <h1>Tags Formulário</h1>
+        <form action="salvar">
+            <input
+                name="nome"
+                type="text" 
+                value=""
+                placeholder="Informe seu nome">
+            <input
+                name="email"
+                type="email"
+                placeholder="Informe seu email">
+            <input 
+                name="senha"
+                type="password"
+                placeholder="Informe uma senha forte">
+            <br>
+            <input
+                name="dependentes"
+                type="number"
+                min="0"
+                max="10"
+                placeholder="Informe a qtde de dependentes">
+            <input
+                name="telefone"
+                type="tel"
+                placeholder="Informe a telefone">
+            <div>
+                <label for="exterior">Mora no exterior?</label>
+                <input
+                    id="exterior"
+                    name="exterior"
+                    type="checkbox">
+            </div>
+            <div>
+                <div>
+                    <label for="sal2000">Até 2000</label>
+                    <input id="sal2000" name="salario" type="radio" value="2000">
+                </div>
+                <div>
+                    <label for="sal4000">Até 4000</label>
+                    <input id="sal4000" name="salario" type="radio" value="4000">
+                </div>
+                <div>
+                    <label for="sal6000">Até 6000</label>
+                    <input id="sal6000" name="salario" type="radio" value="6000">
+                </div>
+                <div>
+                    <label for="sal6001">Mais de 6001</label>
+                    <input id="sal6001" name="salario" type="radio" value="6001">
+                </div>
+            </div>
+            <select name="tipo">
+                <option value="cm">Comum</option>
+                <option value="esp">Especial</option>
+                <option value="vip">VIP</option>
+                <option value="ult">Ultra</option>
+            </select>
+            <button>Salvar</button>
+        </form>
+    </body>
+</html>
